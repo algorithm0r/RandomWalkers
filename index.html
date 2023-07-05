@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random Walkers</title>
+  
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./util.js"></script>
+    <script type="text/javascript" src="./automata.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameWorld" width="1000" height="1000" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <div class="data">
+        <div id="tick">Tick: 0</div>
+        <div id="steps">Steps: 0</div>
+        <div id="explored">Cells Explored: 0</div>
+        <div id="walkers1d">1d Walkers: 0</div>
+        <div id="walkers2d">2d Walkers: 0</div>
+        <div id="escaped">Walkers Escaped: 0</div>
+    </div>
+    <!--
+    <div class="slider-container">
+        <label for="plantgrowth">Plant Growth</label>
+        <input type="range" id="plantgrowth" min="1" max="80" value="20" class="slider">
+        
+        <label for="animatgrowth">Animat Growth</label>
+        <input type="range" id="animatgrowth" min="1" max="80" value="4" class="slider">
+
+        <label for="animatselection">Animat Food Selectivity</label>
+        <input type="range" id="animatselection" min="-1" max="1" value="0" step="0.05" class="slider">
+    </div>
+    -->
+    <br>
+    <button type="button" id="1dwalk" class="button">Add 1d Walker</button>
+    <button type="button" id="2dwalk" class="button">Add 2d Walker</button>
+    <button type="button" id="drunk" class="button">Add 2d Drunk Walker</button>
+    <button type="button" id="clear" class="button">Clear All</button>
+</body>
+</html>
